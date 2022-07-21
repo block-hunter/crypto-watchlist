@@ -26,7 +26,7 @@ This project is a simple crypto currency web application.
 
 2 -  Run the command `npm install` to install all the dependencies.
 
-3 - Run the command `dotnet run` to start serving the project.
+3 - Run the command `npm run start` to start serving the project.
 
 4 - That it's, your application is running in `http://localhost:3000`.
 
