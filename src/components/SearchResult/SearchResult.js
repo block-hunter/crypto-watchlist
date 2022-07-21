@@ -25,7 +25,7 @@ const SearchResult = ({
   return (
     <div
       className={`result ${
-        isSelected ? "bg-blue-100 border-blue-200" : "bg-white"
+        isSelected && "selected-box"
       }`}
     >
       <div className="title">

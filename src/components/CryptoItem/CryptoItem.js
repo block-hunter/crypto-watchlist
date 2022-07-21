@@ -42,7 +42,7 @@ const CryptoItem = ({watchlist, setWatchlist, coin}) => {
 
   return (
     <li className='crypto-item'>
-        <div>
+        <div className="img-box">
           <img src={coin.image} className="coin-img" alt={coin.name} />
         </div>
 

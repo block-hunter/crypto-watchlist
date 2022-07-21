@@ -1,11 +1,14 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 100;
-  width: 100%;
-  border: 1px solid black;
+  
+  
+  width: 100vw;
+  height: 100vh;
   margin: 0;
+
   background: url("./assets/images/main-bg.jpg") no-repeat;
-  background-size:100%;
+  background-size:cover;
 
   overflow: hidden;
 
@@ -25,5 +28,9 @@ body {
   &::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     outline: 1px solid slategrey;
+  }
+
+  @media screen and (max-width: 640px) {
+    background: #0f1521ec;
   }
 }

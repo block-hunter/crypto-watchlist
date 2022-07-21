@@ -9,25 +9,52 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media screen and (max-width: 560px) {
+            width: 18%;
+            font-size: 1em;
+        }
     }
+
+    .img-box {
+        width: 18%;
+
+        .coin-img {
+            width: 40px;
+            object-fit: contain;
+        
+            @media screen and (max-width: 560px) {
+                width: 30px;
+            }
+        }
+    }
+
     .title {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
 
         h4 {
             font-size: 1.1em;
-            font-weight: 400;
+            font-weight: 500;
+
+            @media screen and (max-width: 560px) {
+                font-size: 1em;
+            }
         }
     }
 
     .price {
-        font-size: 1.2zem;
+        font-size: 1.2em;
         font-weight: bold;
+
+        @media screen and (max-width: 560px) {
+            font-size: 1em;
+        }
     }
 
     .counter {
-
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -36,44 +63,66 @@
 
         .counter-input {
             color: white;
+            max-width: 15px;
+            margin: 0 5px;
             background-color: transparent;
             display: inline-block;
             vertical-align: top;
-            font-size: 25px;
+            font-size: 1.4rem;
             font-weight: 700;
             line-height: 30px;
-            padding: 0 2px;
-            min-width: 35px;
             text-align: center;
 
-            border: 0;
-            width: 2%;
+            border: 1px solid rgb(42, 62, 83);
+
+            @media screen and (max-width: 560px) {
+                font-size: 1.2rem;
+                padding: 0;
+                width: 18px;
+            }
         }
 
         span {
+
+            margin: 0;
+            padding: 0;
+
             cursor: pointer;
             display: inline-block;
             vertical-align: top;
+
+            font-size: 1.4rem;
+            font-weight: bold;
             color: white;
-            width: 30px;
+
             height: 30px;
-            font: 30px/1 Arial,sans-serif;
             text-align: center;
             border-radius: 50%;
 
             &:hover{
-                background-color: #717fe0 !important;
+                color: #717fe0 !important;
+            }
+
+            @media screen and (max-width: 560px) {
+                
             }
         }
+
+      
     }
 
     .delete {
+        padding: 0;
+        margin: 0;
+        width: 15%;
+
         font-size: 1.1rem;
         cursor: pointer;
+
+        @media screen and (max-width: 560px) {
+            font-size: 1rem;            
+
+        }
     }
 }
 
-.coin-img {
-    width: 40px;
-    object-fit: contain;
-}

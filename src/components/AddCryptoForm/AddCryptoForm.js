@@ -85,7 +85,7 @@ const AddCryptoForm = ({
               />
             ))}
           {searchQuery.length > 0 && searchResults.length === 0 && (
-            <p className="text-center mt-4 text-sm">No results found.</p>
+            <p className="info-text">No results found.</p>
           )}
           {searchQuery.length === 0 &&
             coins.map((c) => (
@@ -97,7 +97,7 @@ const AddCryptoForm = ({
               />
             ))}
           {loading && (
-            <p className="text-center mt-4 text-sm">Loading...</p>
+            <p className="info-text">Loading...</p>
           )}
         </div>
       </div>

@@ -7,7 +7,6 @@
     width: 100%;
     margin: 0 auto;
 
-
     &::-webkit-scrollbar {
         width: 1em;
     }
@@ -26,7 +25,11 @@
 }
 
 
-
+.info-text {
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+}
 
 .search-input {
     padding: .5rem 2rem;
