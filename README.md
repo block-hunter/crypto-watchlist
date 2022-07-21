@@ -18,6 +18,7 @@ This project is a simple crypto currency web application.
 
 - Using props to pass value other components.
 - Counter doesnt work.
+- Folder structure
 
 
 ## Set up
