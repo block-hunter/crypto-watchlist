@@ -14,6 +14,12 @@ This project is a simple crypto currency web application.
 - All Currencies in Coingecko.
 - Data stored in Local Storage.
 
+## Missing Features
+
+- Using props to pass value other components.
+- Counter doesnt work.
+
+
 ## Set up
 
 1 - Clone this project running `git clone https://github.com/block-hunter/crypto-watchlist.git` in your terminal. If you haven't git installed can simply download it and unzip it.
