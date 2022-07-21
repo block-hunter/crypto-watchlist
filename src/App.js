@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import {ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import "./App.scss";
+import { AddCryptoForm, CryptoList, Nav } from "./components";
 
 function App() {
+
+  const [list, setList] = useState("watchlist");
+  const [watchlist, setWatchlist] = useState(
+    JSON.parse(localStorage.getItem("watchlist")) || []
+  );
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="app">
+        <Nav listPage={list} setListPage={setList} />
+
+        {
+          list === 'watchlist' ? <CryptoList watchlist={watchlist} setWatchlist={setWatchlist} /> :
+            (<AddCryptoForm watchlist={watchlist} setWatchlist={setWatchlist} />)
+        }
+      </div>
+
+      <ToastContainer />
     </div>
   );
 }

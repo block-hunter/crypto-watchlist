@@ -1,0 +1,16 @@
+.page-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    .page-item {
+        
+        a {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            cursor: pointer;
+            color: white;
+        }
+    }
+}
