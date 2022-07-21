@@ -63,7 +63,6 @@ const AddCryptoForm = ({
       className="add-crypto-form"
       onClick={(e) => e.stopPropagation()}
     >
-      <div>
         {/* Search bar */}
         <input
           type="text"
@@ -73,7 +72,7 @@ const AddCryptoForm = ({
           className="search-input"
         />
 
-        <div className="overflow-y-auto scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-gray-50 pr-2 h-48">
+        <div className="coin-list">
           {searchQuery.length > 0 &&
             searchResults.length > 0 &&
             searchResults.map((c) => (
@@ -87,7 +86,8 @@ const AddCryptoForm = ({
           {searchQuery.length > 0 && searchResults.length === 0 && (
             <p className="info-text">No results found.</p>
           )}
-          {searchQuery.length === 0 &&
+
+          {searchQuery.length === 0 && ( 
             coins.map((c) => (
               <SearchResult
                 key={c.id}
@@ -95,12 +95,13 @@ const AddCryptoForm = ({
                 watchlist={watchlist}
                 setWatchlist={setWatchlist}
               />
-            ))}
+            ))
+          )}
+
           {loading && (
             <p className="info-text">Loading...</p>
           )}
         </div>
-      </div>
     </div>
   );
 };

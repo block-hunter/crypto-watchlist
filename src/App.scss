@@ -1,29 +1,24 @@
-
-
 .container {
-    width: 100vw;
-    height: 100vh;
-    border: 1px solid white;
-    
-
     display: flex;
     align-items: center;
     justify-content: center;
 
+    width: 100vw;
+    height: 100vh;
 
 
     .app {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content:flex-start;
+        justify-content: space-around;
         gap: 40px;
-
-        min-width: 560px;
-        min-height: 700px;
 
         background-color: #0f1521ec;
         color: white;
+
+        height: 70vh;
+        width: 50vw;
 
         padding: 2rem 0;
         border-radius: 15px;
@@ -33,15 +28,22 @@
         -webkit-box-shadow: 5px 7px 72px 7px rgba(0,0,0,0.75);
         -moz-box-shadow: 5px 7px 72px 7px rgba(0,0,0,0.75);
 
-        @media screen and (max-width: 400px) {
-            border: 1px solid wheat;
+        @media screen and (max-width: 560px) {
             border-radius: 0;
             background-color: transparent;
-            border: none;
+            box-shadow: none;
             gap: 50px;
             padding: 0;
-            box-shadow: none;
+            border: none;
             justify-content: space-between;
+
+            height: 80vh;
+            width: 100vw;
         }
+    }
+
+
+    @media screen and (max-width: 560px) {
+        height: 96vh;
     }
 }

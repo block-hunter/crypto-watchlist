@@ -1,27 +1,30 @@
 .result {
     padding: 1rem 2rem;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(221, 48, 48);
     overflow: hidden;
-    animation: all 1s ease-in-out;
+    
     display: flex;
+    justify-content: center;
     align-items: center;
 
     .title {
         width: 100%;
+        font-weight: bold;
         display: flex;
         align-items: center;
         gap: 1rem;
 
         img {
             width: 50px;
+
+
+            @media screen and (max-width: 560px) {
+                width: 40px;
+            }
         }
 
-        // w-full flex gap-3 items-center 
     }
 
-    @media screen and (max-width: 560px) {
-        
-    }
 }
 
 .selected-box {

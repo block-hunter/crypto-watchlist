@@ -34,7 +34,9 @@ const CryptoItem = ({watchlist, setWatchlist, coin}) => {
       setWatchlist((prevWatchlist) =>
         prevWatchlist.filter((c) => c !== coin.id)
       );
-      toast(`${coin.name} Deleted`)
+      toast(`${coin.name} Deleted`, {
+        position: 'bottom-right'
+      })
     } else {
       setWatchlist((prevWatchlist) => [...prevWatchlist, coin.id]);
     }
@@ -53,9 +55,9 @@ const CryptoItem = ({watchlist, setWatchlist, coin}) => {
         <div className='price'>${formatPrice(coin.current_price)}</div>
 
         <div className="counter">
-          <span class="minus">-</span>
-          <input type="text" class="counter-input" value={1} disabled />
-          <span class="plus">+</span>
+          <span>-</span>
+          <input type="text" className="counter-input" value={1} disabled />
+          <span>+</span>
         </div>
 
         <div className='delete'>

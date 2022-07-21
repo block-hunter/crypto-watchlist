@@ -6,6 +6,7 @@ const SearchResult = ({
   watchlist,
   setWatchlist,
 }) => {
+ 
   const [isSelected, setIsSelected] = useState(
     watchlist.includes(coin.id)
   );
