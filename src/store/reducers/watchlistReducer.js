@@ -20,15 +20,15 @@ const watchlistReducer = createSlice({
     initialState: initialWatchlistState,
     reducers: {
         addCoin(state, action) {
-            if (state.includes(coin.id)) {
-                setWatchlsist((prevWatchlist) =>
-                  prevWatchlist.filter((c) => c !== coin.id)
-                );
-                setIsSelected(false);
-              } else {
-                setWatchlist((prevWatchlist) => [...prevWatchlist, coin.id]);
-                setIsSelected(true);
-              }
+            // if (state.includes(coin.id)) {
+            //     setWatchlsist((prevWatchlist) =>
+            //       prevWatchlist.filter((c) => c !== coin.id)
+            //     );
+            //     setIsSelected(false);
+            //   } else {
+            //     setWatchlist((prevWatchlist) => [...prevWatchlist, coin.id]);
+            //     setIsSelected(true);
+            //   }
         },
         deleteCoin(state, action) {
 
